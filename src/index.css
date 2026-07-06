@@ -1,9 +1,36 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  gap: 40px;
+  justify-content: center;
+  margin-top: 80px;
+}
 
 .hole {
-  background: url("/hole.png") no-repeat center/contain;
+  width: 200px;
+  height: 150px;
+  background: url("/hole.png") no-repeat center;
+  background-size: contain;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hole img {
+  width: 90px;
+  height: auto;
 }
 
 .mole {
-  background-image: url("/mole.png");
+  width: 100px;
+  height: 100px;
+  background: url("/mole.png") no-repeat center;
+  background-size: contain;
 }
-
